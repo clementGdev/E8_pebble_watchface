@@ -1,0 +1,90 @@
+{
+  "uuid": "f58eb508-53e0-4bbc-a4f5-2d8dac616499",
+  "shortName": "E8",
+  "longName": "E8",
+  "companyName": "Clementg",
+  "versionCode": 1.2,
+  "versionLabel": "1.2.4",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_E_8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_0",
+        "file": "images/column0.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_1",
+        "file": "images/column1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_2",
+        "file": "images/column2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_3",
+        "file": "images/column3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_4",
+        "file": "images/column4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_5",
+        "file": "images/column5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_6",
+        "file": "images/column6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_7",
+        "file": "images/column7.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_8",
+        "file": "images/column8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_COLUMN_9",
+        "file": "images/column9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_BACK",
+        "file": "images/bat_back.png"
+      },    
+      {
+        "type": "png",
+        "name": "IMAGE_BAT_CHARGING",
+        "file": "images/bat_charging.png"
+      },  
+      
+      {
+        "type": "png",
+        "name": "IMAGE_BACKGROUND",
+        "file": "images/background.png"
+      }
+
+
+    ]
+  }
+}
