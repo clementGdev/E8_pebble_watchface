@@ -3,6 +3,8 @@ E8_pebble_watchface
 
 This is a watchface designed for a Pebble Smartwatch (SDK 2)
 
+2.0 Version on the way...
+
 Now, you get to see the battery life of your Pebble !
 12/24h support.
 
