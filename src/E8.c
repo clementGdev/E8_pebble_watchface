@@ -140,7 +140,6 @@ void init(void) {
 	layer_set_update_proc(bat_back_layer, layer_update_callback_bat_back);
 	layer_add_child(window_layer, bat_back_layer);
 	
-	
 
 	time_t now = time(NULL);
 	struct tm *current_time = localtime(&now);
