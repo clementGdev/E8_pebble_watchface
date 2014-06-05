@@ -142,8 +142,6 @@ void init(void) {
 	
 	
 
-	
-
 	time_t now = time(NULL);
 	struct tm *current_time = localtime(&now);
 	handle_minute_tick(current_time, SECOND_UNIT);
