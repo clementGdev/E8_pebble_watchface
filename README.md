@@ -4,8 +4,10 @@ E8_pebble_watchface
 This is a watchface designed for a Pebble Smartwatch (SDK 2)
 <url>https://apps.getpebble.com/applications/52acf23c19ff50d903000024</url>
 <p>
-<b>GET READY !
-2.0 Version on the way...</b>
+<b>GET READY !</b>
+</p>
+<p>
+<b>2.0 Version on the way...</b>
 </p>
 
 Now, you get to see the battery life of your Pebble !
