@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+			<style>
+				body {
+					background: #444;
+					color: #FFF;
+					font-family: sans-serif, HelveticaNeue-Light, sans-serif;
+				}
+			p,a {color: #ccc}
+			hr {clear: both; margin: 10px 0}
+			input {
+				display:none;
+				margin:10px;
+			}
+			input + label {
+				display:inline-block;
+				color: #ccc;
+				border:1px solid #FF4700;
+				font-size:16px;
+				text-align:center;
+				margin: 2px 0 2px 0;
+				padding: 10px 0;
+			}
+			input[type=submit] + label {
+				width: 300px;
+				font-size: 32px;
+				border-radius: 30px;
+			}
+			input[type=radio]:checked + label, input[type=submit] + label {
+				background: #FF4700;
+				color: #FFF;
+			}
+			.left { border-radius: 20px 0 0 20px; border-right: 0; width: 70px}
+			.mid {border-right: 0}
+			.right { border-radius: 0 20px 20px 0; width: 70px}
+			.triple {width: 65px}
+			.middle {width: 150px}
+			.narrow {width: 40px}
+			.flushright {float: right; margin-bottom: 10px}
+			.center {
+				width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#save_button_placeholder + label {visibility: hidden;}
+			#save_button_background {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 10px;
+				background: #333;
+				box-shadow: #000 0 0 20px 10px;
+			}
+			</style>
+	</head>
+	<body>
+		<h1>E8 Configuration</h1>
+		<p>Choose watchapp settings</p>
+		
+		<p>Invert watchapp:
+		<select id="invert_select">
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		</select>
+		</p>
+		
+		<p>
+		<button id="save_button">Save</button>
+		</p>
+	</body>
+	
+	
+	<hr>
+	<div class="flushright">
+		<input
+			type="radio" id="graphics0" name="graphics_mode" value="Off"><label for="graphics0" class="left">Black</label><input
+                type="radio" id="graphics1" name="graphics_mode" value="On"><label for="graphics1" class="right">White</label>
+				</div>
+	Color<br>scheme:
+</html>
+
+
+<script>
+	//Setup to allow easy adding more options later
+	function saveOptions() {
+		var invertSelect = document.getElementById("invert_select");
+		
+		var options = {
+			"invert": invertSelect.options[invertSelect.selectedIndex].value
+		}
+		
+		return options;
+	};
+
+var submitButton = document.getElementById("save_button");
+submitButton.addEventListener("click",
+							  function() {
+							  console.log("Submit");
+							  
+							  var options = saveOptions();
+							  var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(options));
+							  
+							  document.location = location;
+							  },
+							  false);
+	</script>

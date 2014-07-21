@@ -13,6 +13,7 @@ typedef enum {
   DEFAULT_MENU_ICON = 0, // Friendly synonym for use in `PBL_APP_INFO()` calls
   RESOURCE_ID_IMAGE_MENU_ICON,
   RESOURCE_ID_IMAGE_BAT_BACK,
+  RESOURCE_ID_IMAGE_ANIM,
   RESOURCE_ID_IMAGE_BAT_CHARGING,
   RESOURCE_ID_IMAGE_BACKGROUND,
 
@@ -21,7 +22,8 @@ typedef enum {
 static const uint32_t resource_crc_table[] = {
   1778971744,
   317908656,
-  2249420066,
-  3321758845,
+  2776000601,
+  3764782585,
+  3255359696,
 };
 

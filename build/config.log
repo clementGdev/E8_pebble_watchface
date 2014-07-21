@@ -1,13 +1,13 @@
-# project  configured on Thu Jun  5 03:27:10 2014 by
+# project  configured on Mon Jun 16 15:26:37 2014 by
 # waf 1.7.11 (abi 98, python 20705f0 on darwin)
 # using /Users/clementgix/pebble-dev/PebbleSDK-2.0.0/Pebble/waf configure build
 #
 ----------------------------------------
 Setting top to
-/Users/clementgix/pebble-dev/PebbleSDK-2.2/ownWatchfaces_2.2/BLACK/FILES_24_E8_2_BAT/E8
+/Users/clementgix/pebble-dev/PebbleSDK-2.2/ownWatchfaces_2.2/Javascript/one_source_animated_java_E8
 ----------------------------------------
 Setting out to
-/Users/clementgix/pebble-dev/PebbleSDK-2.2/ownWatchfaces_2.2/BLACK/FILES_24_E8_2_BAT/E8/build
+/Users/clementgix/pebble-dev/PebbleSDK-2.2/ownWatchfaces_2.2/Javascript/one_source_animated_java_E8/build
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc

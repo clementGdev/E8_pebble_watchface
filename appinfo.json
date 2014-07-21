@@ -3,12 +3,16 @@
   "shortName": "E8",
   "longName": "E8",
   "companyName": "Clementg",
-  "versionCode": 1,
-  "versionLabel": "1.3",
+  "versionCode": 2,
+  "versionLabel": "2.0",
   "watchapp": {
     "watchface": true
   },
-  "appKeys": {},
+  "capabilities":["configurable"],
+  "appKeys": {
+  	"KEY_INVERT":0,
+  	"KEY_BATTERY":1
+  	},
   "resources": {
     "media": [
       {
@@ -17,11 +21,16 @@
         "name": "IMAGE_MENU_ICON",
         "file": "images/menu_icon_E_8.png"
       },
-            {
+      {
         "type": "png",
         "name": "IMAGE_BAT_BACK",
         "file": "images/bat_back.png"
-      },    
+      },  
+      {
+        "type": "png",
+        "name": "IMAGE_ANIM",
+        "file": "images/anim.png"
+      },   
       {
         "type": "png",
         "name": "IMAGE_BAT_CHARGING",
