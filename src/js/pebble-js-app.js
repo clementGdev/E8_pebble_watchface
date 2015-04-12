@@ -1,6 +1,6 @@
  Pebble.addEventListener("ready",
   function(e) {
-    //console.log("PebbleKit JS ready!");
+    console.log("PebbleKit JS ready!");
   }
 );
 
@@ -16,18 +16,19 @@ Pebble.addEventListener("showConfiguration",
 Pebble.addEventListener("webviewclosed",
   function(e) {
     //Get JSON dictionary
-     console.log("Configuration window returned");
+    //console.log("Configuration window returned");
+	//console.log("response" + e.response);
     var configuration = JSON.parse(decodeURIComponent(e.response));
-    console.log("Configuration window returned: " + JSON.stringify(configuration));
+    //console.log("Configuration window returned: " + JSON.stringify(configuration));
  
     //Send to Pebble, persist there
     Pebble.sendAppMessage(
       {"KEY_INVERT": configuration.invert, "KEY_BATTERY": configuration.battery},
       function(e) {
-        //console.log("Sending settings data...");
+        console.log("Sending settings data...");
       },
       function(e) {
-        //console.log("Settings feedback failed!");
+        console.log("Settings feedback failed!");
       }
     );
   }

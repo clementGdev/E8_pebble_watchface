@@ -1,49 +1,50 @@
 {
-  "uuid": "f58eb508-53e0-4bbc-a4f5-2d8dac616499",
-  "shortName": "E8",
-  "longName": "E8",
-  "companyName": "Clementg",
-  "versionCode": 2,
-  "versionLabel": "2.0",
-  "watchapp": {
-    "watchface": true
-  },
-  "capabilities":["configurable"],
-  "appKeys": {
-  	"KEY_INVERT":0,
-  	"KEY_BATTERY":1
-  	},
-  "resources": {
-    "media": [
-      {
-        "menuIcon": true,
-        "type": "png",
-        "name": "IMAGE_MENU_ICON",
-        "file": "images/menu_icon_E_8.png"
-      },
-      {
-        "type": "png",
-        "name": "IMAGE_BAT_BACK",
-        "file": "images/bat_back.png"
-      },  
-      {
-        "type": "png",
-        "name": "IMAGE_ANIM",
-        "file": "images/anim.png"
-      },   
-      {
-        "type": "png",
-        "name": "IMAGE_BAT_CHARGING",
-        "file": "images/bat_charging.png"
-      },  
-      
-      {
-        "type": "png",
-        "name": "IMAGE_BACKGROUND",
-        "file": "images/background.png"
-      }
-
-
-    ]
-  }
+    "appKeys": {
+        "KEY_BATTERY": 1,
+        "KEY_INVERT": 0
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "Clementg",
+    "longName": "E8",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "images/bat_charging.png",
+                "name": "IMAGE_BAT_CHARGING",
+                "type": "png"
+            },
+            {
+                "file": "images/anim.png",
+                "name": "IMAGE_ANIM",
+                "type": "png"
+            },
+            {
+                "file": "images/bat_back.png",
+                "name": "IMAGE_BAT_BACK",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_icon_E_8.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "E8",
+    "uuid": "f58eb508-53e0-4bbc-a4f5-2d8dac616499",
+    "versionCode": 2,
+    "versionLabel": "2.4",
+    "watchapp": {
+        "watchface": true
+    }
 }
