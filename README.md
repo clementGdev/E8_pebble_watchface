@@ -14,4 +14,3 @@ And squares are now Animated !
 This watchface was inspired by the E8 watch from Lexon, originally designed by Brieuc du Roscoät.
 From left to right, columns are ten of the hours, one of the hours, ten of the minutes, one of the minutes.
 
-On the example, it is 9:28.
