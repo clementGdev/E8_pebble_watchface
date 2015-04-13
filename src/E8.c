@@ -7,6 +7,7 @@
 /* Version note : 	optimisations, use of rect instead of images		*/
 /* Animation has changed, now pops up instead of droping				*/
 /*																		*/
+/*																		*/
 /* 2.9 SDK																*/
 /************************************************************************/
 
