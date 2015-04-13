@@ -1,9 +1,9 @@
 /************************************************************************/
 /* This is a Pebble Watchface inspired by the E8 Watch by Lexon.		*/
 /* Made By Clement Guillou												*/
-/* Date : 27/02/15														*/
+/* Date : 13/04/15														*/
 /*																		*/
-/* Version : 1.6														*/
+/* Version : 2.5														*/
 /* Version note : 	optimisations, use of rect instead of images		*/
 /* Animation has changed, now pops up instead of droping				*/
 /*																		*/
