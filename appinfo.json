@@ -1,45 +1,49 @@
 {
-    "appKeys": {
-        "KEY_BATTERY": 1,
-        "KEY_INVERT": 0
-    },
-    "capabilities": [
-        "configurable"
-    ],
-    "companyName": "Clementg",
-    "longName": "E8",
-    "projectType": "native",
-    "resources": {
-        "media": [
-            {
-                "file": "images/menu_icon_E_8.png",
-                "menuIcon": true,
-                "name": "IMAGE_MENU_ICON",
-                "type": "png"
-            },
-            {
-                "file": "images/bat_back.png",
-                "name": "IMAGE_BAT_BACK",
-                "type": "png"
-            },
-            {
-                "file": "images/bat_charging.png",
-                "name": "IMAGE_BAT_CHARGING",
-                "type": "png"
-            },
-            {
-                "file": "images/background.png",
-                "name": "IMAGE_BACKGROUND",
-                "type": "png"
-            }
-        ]
-    },
-    "sdkVersion": "2",
-    "shortName": "E8",
-    "uuid": "f58eb508-53e0-4bbc-a4f5-2d8dac616499",
-    "versionCode": 2,
-    "versionLabel": "2.5",
-    "watchapp": {
-        "watchface": true
-    }
+  "appKeys": {
+    "KEY_BATTERY": 1,
+    "KEY_INVERT": 0
+  },
+  "capabilities": [
+    "configurable"
+  ],
+  "companyName": "Clementg",
+  "longName": "E8",
+  "projectType": "native",
+  "resources": {
+    "media": [
+      {
+        "file": "images/menu_icon_E_8.png",
+        "menuIcon": true,
+        "name": "IMAGE_MENU_ICON",
+        "type": "png"
+      },
+      {
+        "file": "images/bat_back.png",
+        "name": "IMAGE_BAT_BACK",
+        "type": "png"
+      },
+      {
+        "file": "images/bat_charging.png",
+        "name": "IMAGE_BAT_CHARGING",
+        "type": "png"
+      },
+      {
+        "file": "images/background.png",
+        "name": "IMAGE_BACKGROUND",
+        "type": "png"
+      }
+    ]
+  },
+  "sdkVersion": "3",
+  "shortName": "E8",
+  "uuid": "f58eb508-53e0-4bbc-a4f5-2d8dac616499",
+  "versionCode": 2,
+  "versionLabel": "2.5",
+  "watchapp": {
+    "watchface": true
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ]
 }

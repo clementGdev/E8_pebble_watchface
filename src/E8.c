@@ -12,6 +12,7 @@
 /************************************************************************/
 
 #include "pebble.h"
+# include "strap/strap.h"
 
 
 #define KEY_INVERT 0
@@ -221,7 +222,7 @@ static void layer_update_callback(Layer *me, GContext *ctx) {
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 static void layer_update_callback_background(Layer *me, GContext *ctx) {
 
-	GRect bounds = background_image->bounds;
+	GRect bounds = gbitmap_get_bounds(background_image);
 	
 	graphics_draw_bitmap_in_rect(ctx, background_image, (GRect) { .origin = { 0, 0 }, .size = bounds.size});
 	
@@ -230,7 +231,7 @@ static void layer_update_callback_background(Layer *me, GContext *ctx) {
 // BATTERY LIFE UPDATE CALLBACK
 static void layer_update_callback_bat_back(Layer *me, GContext *ctx) {
 
-	GRect bounds_bat_back = bat_back->bounds;
+	GRect bounds_bat_back = gbitmap_get_bounds(bat_back);
 	if (battery == 1) {
 		if (charge_round == 11) {
 			graphics_draw_bitmap_in_rect(ctx, bat_charging, (GRect) { .origin = { 10, 8 }, .size = bounds_bat_back.size });
@@ -479,11 +480,15 @@ void init(void)
 	bat_charging = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BAT_CHARGING);
 
 	handle_battery(battery_state_service_peek());
+	
+	strap_init();
 
 }
 
 
 void deinit(void) {
+	
+	strap_deinit();
 	
 	tick_timer_service_unsubscribe();
 	battery_state_service_unsubscribe();
