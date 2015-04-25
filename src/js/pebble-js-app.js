@@ -7,8 +7,15 @@ var strap_api_num_samples=10;var strap_api_url="https://api.straphq.com/create/v
 //  End of Strap API
 // ------------------------------
 
+Pebble.addEventListener("ready",
+  function(e) {
+    console.log("PebbleKit JS ready!");
+  }
+);
+
 Pebble.addEventListener("appmessage",
       function(e) {
+						console.log("PebbleKit JS ready!");
 						// Strap API: Developer updates these parameters to fit
 						var strap_params = {
 						// *** change the app id! *** //
@@ -34,12 +41,6 @@ Pebble.addEventListener("appmessage",
 						
       }
 						);
-
-Pebble.addEventListener("ready",
-  function(e) {
-    console.log("PebbleKit JS ready!");
-  }
-);
 
 
 Pebble.addEventListener("showConfiguration",

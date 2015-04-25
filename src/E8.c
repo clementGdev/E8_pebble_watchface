@@ -284,7 +284,7 @@ static void layer_update_callback_bat_back(Layer *me, GContext *ctx) {
 
 // HANDLER FOR TIME
 static void handle_minute_tick(struct tm* tick_time, TimeUnits units_changed) {
-	
+	strap_log_event("/select");
 	//int seconds_anim = tick_time->tm_sec;
 	int minutes_anim = tick_time->tm_min;
 	int hour_anim = tick_time->tm_hour;
